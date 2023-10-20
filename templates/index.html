@@ -1,0 +1,33 @@
+{% extends "template.html" %}
+{% block titulo %}
+    <title>Página Inicial</title>
+{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="../static/index.css">
+{% endblock %}
+{% block main %}
+    <section>
+        <h2>Galeria de Imagens</h2>
+        <div class="image-gallery">
+            <img src="imagem1.jpg" alt="Imagem 1">
+            <img src="imagem2.jpg" alt="Imagem 2">
+            <img src="imagem3.jpg" alt="Imagem 3">
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
+    </section>
+
+    <section>
+        <h2>Informações de Produto</h2>
+        <div class="product-card">
+            <img src="produto1.jpg" alt="Produto 1">
+            <h3>Nome do Produto 1</h3>
+            <p>Descrição do Produto 1</p>
+        </div>
+        <div class="product-card">
+            <img src="produto2.jpg" alt="Produto 2">
+            <h3>Nome do Produto 2</h3>
+            <p>Descrição do Produto 2</p>
+        </div>
+        <!-- Adicione mais cards de produto conforme necessário -->
+    </section>
+{% endblock %}
