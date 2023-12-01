@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/template.css">
-    {% block style %}{% endblock %}
-    {% block titulo %}{% endblock %}
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/template.css" />
+    {% block style %}{% endblock %} {% block titulo %}{% endblock %}
+  </head>
+  <body>
     <header>
-        <div class="logo">Sua Logo</div>
-        <ul class="links">
-            <li><a href="#">Sobre mim</a></li>
-            <li><a href="#">Certificados</a></li>
-            <li><a href="#">Portifólio</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
+      <div class="logo-header">
+        <a href="/"
+          ><img
+            src="../static/assets/logo_dizer_dev.png"
+            alt="logo_diego_zerbini_dev"
+            height="50px"
+        /></a>
+      </div>
+      <ul class="links">
+        <li><a href="/about">Sobre mim</a></li>
+        <li><a href="/certificates">Certificados</a></li>
+        <li><a href="/portfolio">Portfólio</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
     </header>
 
-    <main>
-        {% block main %}{% endblock %}
-    </main>
+    <main>{% block main %}{% endblock %}</main>
 
     <footer>
-        <div class="contact-info">
-            <p>Telefone: (123) 456-7890</p>
-            <p>Email: contato@exemplo.com</p>
-        </div>
-        <div class="social-links">
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
-            <!-- Adicione mais links para redes sociais conforme necessário -->
-        </div>
+      <div class="contact-info">
+        <p>Telefone: (11) 98692-1165</p>
+        <p>Email: zerbiniprogramador@gmail.com</p>
+      </div>
+      <div class="social-links">
+        <a href="#"><img src="facebook.png" alt="Youtube" /></a>
+        <a href="#"><img src="twitter.png" alt="Linkedin" /></a>
+        <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+        <!-- Adicione mais links para redes sociais conforme necessário -->
+      </div>
     </footer>
-</body>
+  </body>
 </html>

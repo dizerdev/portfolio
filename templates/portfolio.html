@@ -1,0 +1,44 @@
+{% extends "template.html" %}
+{% block titulo %}
+    <title>Portfolio</title>
+{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="../static/portfolio.css">
+{% endblock %}
+{% block main %}
+<section class="gallery">
+    <h2>Galeria de Imagens</h2>
+    <div class="image-gallery">
+        <!-- Inclua suas imagens aqui -->
+        <img src="image1.jpg" alt="Imagem 1">
+        <img src="image2.jpg" alt="Imagem 2">
+        <img src="image3.jpg" alt="Imagem 3">
+    </div>
+</section>
+
+<section class="about">
+    <h2>Sobre Mim</h2>
+    <div class="about-content">
+        <img src="your_photo.jpg" alt="Sua Foto">
+        <p>Adicione uma descrição sobre você aqui.</p>
+    </div>
+</section>
+
+<section class="portfolio-list">
+    <h2>Meu Portfólio</h2>
+    <ul>
+        <li>
+            <button class="toggle-button">Projeto 1</button>
+            <p class="toggle-content">Descrição do Projeto 1.</p>
+        </li>
+        <li>
+            <button class="toggle-button">Projeto 2</button>
+            <p class="toggle-content">Descrição do Projeto 2.</p>
+        </li>
+        <li>
+            <button class="toggle-button">Projeto 3</button>
+            <p class="toggle-content">Descrição do Projeto 3.</p>
+        </li>
+    </ul>
+</section>
+{% endblock %}

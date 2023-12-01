@@ -1,0 +1,20 @@
+{% extends "template.html" %}
+{% block titulo %}
+    <title>Página Inicial</title>
+{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="../static/about.css">
+{% endblock %}
+{% block main %}
+<div class="container-about">
+    <img src="../static/assets/PERFIL NOVO 2.jpg" alt="Sua Foto" class="profile-image-about">
+    <h2>Seu Nome</h2>
+    <p>Uma breve descrição sobre você, seus interesses e sua jornada pessoal.</p>
+    <h3>Experiência</h3>
+    <p>Sua experiência profissional e educacional.</p>
+    <h3>Interesses</h3>
+    <p>Seus hobbies e interesses pessoais.</p>
+    <h3>Contato</h3>
+    <p>Você pode me contatar em <a href="mailto:seuemail@example.com">seuemail@example.com</a>.</p>
+</div>
+{% endblock %}
